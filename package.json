@@ -1,22 +1,43 @@
 {
   "name": "minimal-repro",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "version": "16.3.0",
+  "description": "A minimal Electron application for macOS",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder --mac"
   },
-  "repository": "https://github.com/electron/minimal-repro",
+  "repository": "https://github.com/sangeeths03/minimal-repro",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "macOS",
+    "demo",
+    "fitfileviewer"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "sangeeths03",
+  "license": "Unlicense",
   "devDependencies": {
-    "electron": "^36.3.2"
+    "electron": "36.3.2",
+    "electron-builder": "26.0.16"
+  },
+  "build": {
+    "appId": "com.example.fitfileviewer",
+    "productName": "Fit File Viewer",
+    "asar": true,
+    "mac": {
+      "icon": "icons/favicon-512x512.icns",
+      "target": [
+        "dmg",
+        "zip",
+        "pkg",
+        "tar.xz",
+        "tar.gz",
+        "tar.bz2"
+      ],
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": true
+    }
   }
 }
+
