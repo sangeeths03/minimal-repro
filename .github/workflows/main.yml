@@ -25,4 +25,5 @@ jobs:
       - name: Build for macOS
         run: |
           npx electron-builder --mac
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
