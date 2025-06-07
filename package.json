@@ -18,7 +18,7 @@
   "license": "Unlicense",
   "devDependencies": {
     "electron": "36.2.0",
-    "electron-builder": "26.0.16"
+    "electron-builder": "26.0.12"
   },
   "build": {
     "appId": "com.example.fitfileviewer",
