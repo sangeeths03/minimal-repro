@@ -36,8 +36,11 @@
       ],
       "category": "public.app-category.productivity",
       "hardenedRuntime": true,
-      "gatekeeperAssess": true
+      "gatekeeperAssess": true,
+      "fileSystem": "HFS+"
+    },
+    "dmg": {
+      "format": "UDZO"
     }
   }
 }
-
