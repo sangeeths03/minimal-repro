@@ -17,7 +17,7 @@
   "author": "sangeeths03",
   "license": "Unlicense",
   "devDependencies": {
-    "electron": "36.4.0",
+    "electron": "37.0.0",
     "electron-builder": "26.0.12"
   },
   "build": {
